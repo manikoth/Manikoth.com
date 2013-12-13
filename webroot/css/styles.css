@@ -1,0 +1,79 @@
+/*========================
+  * Global
+  * Typography
+  * Logo
+  * HOME
+    - A Hard Reset
+    - Work
+    - Colin
+==========================*/
+
+/*==========================
+  Global
+==========================**/
+body {
+  background-color: #fff;
+  background-image: linear-gradient(45deg, rgba(194, 233, 221, 0.5) 1%, rgba(104, 119, 132, 0.5) 100%), linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);
+}
+
+/*==========================
+  Typography
+==========================**/
+
+/* Logo */
+@font-face {
+  font-family: 'Znikomit';
+  src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/16425/Znikomit.otf");
+}
+
+.home blockquote {
+  text-align: center;
+}
+
+/*==========================
+  LOGO
+==========================**/
+
+.logo {
+  border-top: 4px solid #000;
+  font-size: 62.5%;
+  padding: .5em;
+  margin-bottom: 1.5em;
+  width: 16.5em; /* inherit */
+}
+
+.logo div {
+  font-family: 'Znikomit', arial;
+  padding: 0;
+  margin: 0;
+}
+
+.logo div:nth-child(1) {
+  font-size: 24em;
+  margin-top: -18px;
+  letter-spacing: -30px;
+}
+
+.logo div:nth-child(2) {
+  font-size: 3em;
+  text-align: left;
+  letter-spacing: 12px;
+  text-align: right;
+  margin: -24px 0 8px 0;
+}
+
+.logo div:nth-child(3) {
+  border-top: 1px dashed #000;
+  border-bottom: 1px dashed #000;  
+  font-family: 'Znikomit', arial;
+  font-size: 1em;
+  letter-spacing: 14px;
+  padding: .25em 0;
+  text-transform: uppercase;
+}
+
+/*==========================
+  HOME
+==========================**/
+
+/* */
