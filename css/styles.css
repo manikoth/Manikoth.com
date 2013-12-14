@@ -6,6 +6,11 @@
     - A Hard Reset
     - Work
     - Colin
+  * Widgets
+    - background animation
+  * Added to Foundation
+    - Player
+  * Media Queries
 ==========================*/
 
 /*==========================
@@ -30,12 +35,20 @@ body {
   text-align: center;
 }
 
+/**/
+p {
+  color: #333;
+  font-size: 1.25rem;
+  text-indent: 1.5em;
+}
+
 /*==========================
   LOGO
 ==========================**/
 
 .logo {
-  border-top: 4px solid #000;
+  border-top: 4px solid #fff;
+  color: #fff;
   font-size: 62.5%;
   padding: .5em;
   margin-bottom: 1.5em;
@@ -63,17 +76,88 @@ body {
 }
 
 .logo div:nth-child(3) {
-  border-top: 1px dashed #000;
-  border-bottom: 1px dashed #000;  
+  border-top: 1px dashed #fff;
+  border-bottom: 1px dashed #fff;  
   font-family: 'Znikomit', arial;
   font-size: 1em;
   letter-spacing: 14px;
-  padding: .25em 0;
+  padding: .45em 0;
   text-transform: uppercase;
 }
 
 /*==========================
-  HOME
+  Home
 ==========================**/
 
-/* */
+/* A Hard Reset */
+.hard-reset {
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  margin-top: 1em;
+}
+
+.hard-reset .word1 {
+  border-bottom: 8px solid #fff;
+  float: left;
+  font-size: 4.4em;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.hard-reset .word2,
+.hard-reset .word3 {
+  display: block;
+  font-size: 3em;
+  font-style: italic;
+  letter-spacing: -4px;
+  line-height: 1.15em;
+  text-transform: uppercase;
+}
+
+.word3 {
+
+}
+
+/*==========================
+  Widgets
+==========================**/
+
+@-webkit-keyframes bg {
+  
+  0% { background-color: #fff; }
+  25% { background-color: #ccc; }
+  50% { background-color: yellow; }
+  75% { background-color: #000; }
+  100% { background-color: #0079a1; }
+
+} 
+
+body {
+  -webkit-animation: bg 20s infinite alternate;
+  -moz-animation: bg 20s infinite alternate;
+  animation: bg 20s infinite alternate;  
+}
+
+/*==========================
+  Addeded to Foundation
+==========================**/
+.flex-video {
+  border-bottom: 6px double #fff;
+}
+
+/* Space between subhead & <p>*/
+.home h2 + section {
+  margin-top: 1.25rem;
+}
+
+
+/*==========================
+  Media Queries
+==========================*/
+@media screen and (max-width: 480px) {
+  .hard-reset {
+    height: 94px;
+  }
+}
+
+
