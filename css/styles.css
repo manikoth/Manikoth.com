@@ -4,8 +4,9 @@
   * Logo
   * HOME
     - A Hard Reset
-    - Work
-    - Colin
+    - Not A List
+    - P For
+  * Footer  
   * Widgets
     - background animation
   * Added to Foundation
@@ -31,15 +32,55 @@ body {
   src:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/16425/Znikomit.otf");
 }
 
-.home blockquote {
-  text-align: center;
-}
-
-/**/
 p {
   color: #333;
-  font-size: 1.25rem;
+  font-size: 1.25em;
+  line-height: 1.5em;
   text-indent: 1.5em;
+}
+
+
+.home blockquote {
+  border-bottom: 1px dashed rgba(255,255,255,.15);
+  border-top: 1px dashed rgba(255,255,255,.15);
+  border-left: none;
+  color: rgba(255,255,255,.65);
+  font-size: 1em;
+  text-align: right;
+  letter-spacing: 2px;
+  font-style: italic;
+  padding: 0;
+  text-transform: capitalize;
+}
+
+
+/* Links */
+.button  {
+  background: rgba(0, 121, 161, 0.25);
+  color: #fff;
+  border-bottom: 4px double #fff;
+  text-align: right;
+}
+
+a:link,
+a:visited {
+  color: #333;
+  border-bottom: 4px double #ccc;
+}
+
+a:hover,
+a:active {
+  border-bottom: 4px double #ccc;
+}
+
+.button a {
+  color: #fff;
+  border-bottom: none;
+}
+
+/* Home Links */
+.home .button {
+  width: 100%;
 }
 
 /*==========================
@@ -98,6 +139,7 @@ p {
 
 .hard-reset .word1 {
   border-bottom: 8px solid #fff;
+  border-top: 8px solid #fff;
   float: left;
   font-size: 4.4em;
   font-weight: bold;
@@ -114,13 +156,75 @@ p {
   text-transform: uppercase;
 }
 
-.word3 {
 
+/* Not A List*/
+.not-a-list {
+  background: rgba(255,255,255,.15);
+}
+
+
+.not-a-list .word1,
+.not-a-list .word2,
+.not-a-list .word3 {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  display: block;
+  letter-spacing: 8px;
+  padding-left: 0.9375rem;
+  text-transform: uppercase;
+  text-decoration: line-through;
+}
+
+.not-a-list .word1:before,
+.not-a-list .word2:before,
+.not-a-list .word3:before {
+  content: "[ ]";
+  padding-right: .5em;
+}
+
+/* P. For Poukong */
+.p-for {
+  text-align: center;
+}
+
+.p-for .word1 {
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  float: left;
+  font-size: 3em;
+  font-weight: bold;
+  padding: .25em;
+  width: 120px;
+}
+
+.p-for .word2 {
+  margin-top: -110px;
+}
+
+.p-for .word3 {
+  margin-top: -75px;
+}
+
+.p-for .word2,
+.p-for .word3 {
+  font-style: italic;
+  clear: both;
+  color: #fff;
+  float: right;
+  letter-spacing: 4px;
+}
+
+/*==========================
+  Footer
+===========================*/
+footer {
+    background: rgba(255,255,255,.15);
 }
 
 /*==========================
   Widgets
-==========================**/
+===========================*/
 
 @-webkit-keyframes bg {
   
