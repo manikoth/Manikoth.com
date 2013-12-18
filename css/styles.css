@@ -10,6 +10,7 @@
   * Footer  
   * Widgets
     - background animation
+    - background tile
   * Added to Foundation
     - Player
   * Media Queries
@@ -221,10 +222,6 @@ a:active {
 /*==========================
   ART
 ===========================*/
-body.art {
-  background: #fff;
-}
-
 .art-header {
   background-image: linear-gradient(45deg, rgba(194, 233, 221, 0.5) 1%, rgba(104, 119, 132, 0.5) 100%), linear-gradient(-45deg, #494d71 0%, rgba(217, 230, 185, 0.5) 80%);  
 }
@@ -318,6 +315,31 @@ nav a:active {
 
 .top-bar-section li a:not(.button):hover {
     background: rgba(255,255,255,.15);
+}
+
+/* Clearing Images */
+.clearing-blackout {
+  background: rgba(255,255,255,.85);
+}
+
+.clearing-close:link,
+.clearing-close:visited {
+  color: #000;
+  font-size: 3em;
+}
+
+.clearing-close:hover, 
+.clearing-close:focus {
+  color: #0079a1;
+}
+
+.clearing-thumbs img {
+  background: rgba(255,255,255,.15);
+  padding: 5px;
+}
+
+.clearing-thumbs a {
+  border-bottom: none;
 }
 
 /*==========================
